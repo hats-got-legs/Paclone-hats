@@ -39,11 +39,11 @@ public class Collectable : MonoBehaviour
 
     }
 
-   public void RandomRespawn ()
+    public void RandomRespawn()
     {
 
-        randomX = Random.Range(61f, 731f);
-        randomY = Random.Range(62f, 445f);
+        int randomX = (int)Random.Range(61f, 731f);
+        int randomY = (int)Random.Range(62f, 445f);
         whereToSpawn = new Vector2(randomX, randomY);
         Instantiate (item, whereToSpawn, Quaternion.identity);
         //int spriteIndex = Random.Range(0, pelletSprites.Length);
